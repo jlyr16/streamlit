@@ -19,7 +19,6 @@ st.subheader('Apple Stock Price Data')
 st.write(df)
 
 #show data as chart
-st.line_chart(df.Close)
 st.line_chart(df.High)
 st.line_chart(df.Low)
 
