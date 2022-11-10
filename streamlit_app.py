@@ -19,8 +19,9 @@ st.subheader('Apple Stock Price Data')
 st.write(df)
 
 #show data as chart
-st.line_chart(df.High)
-st.line_chart(df.Low)
+chartdata=pd.DataFrame(df,columns=['AAPL.Open','AAPL.High','AAPL.Low','AAPL.Close'])
+st.line_chart(chartdata)
+
 
 #show data as table
 st.table(df)
